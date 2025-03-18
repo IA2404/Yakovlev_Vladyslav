@@ -194,6 +194,7 @@ function mostTransactionTypes(transactions) {
         counts[transaction_type] = (counts[transaction_type] ?? 0) + 1;
         return counts;
     }, {});
+    
 
     const debitCount = transactionCounts["debit"] ?? 0;
     const creditCount = transactionCounts["credit"] ?? 0;
@@ -271,6 +272,13 @@ console.log(mostTransactionTypes(singleElementArray));
 console.log(findMostTransactionsMonth(singleElementArray));
 console.log(mapTransactionDescriptions(singleElementArray));
 ```
+# Вывод программы
+Вызов некоторых функций с основным массивом транзакций:
+![Функций с основным массивом транзакций](screenshots/empty_and_one_parameter_output.jpg)
+
+Вызов некоторых функций с пустым/одиночным элементом в массиве:
+![Функции с пустым массивом](screenshots/first_output.jpg)
+
 # Контрольные вопросы
 1. Какие методы массивов можно использовать для обработки объектов в JavaScript?
 map(), filter(), reduce(), forEach(), find(), some(), every(), sort(), includes(), indexOf(), flatMap()
